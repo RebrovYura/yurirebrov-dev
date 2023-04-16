@@ -4,8 +4,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -15,14 +13,14 @@ module.exports = {
         secondary: '#37323E',
         accent: '#EC9A29',
         label: '#A3A3A3',
-        logo: '#0F8B8D'
+        logo: '#0F8B8D',
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        'poppins': ['Poppins', 'sans-serif'],
       },
       boxShadow: {
-        'headerDownShadow': '0px 5px 10px rgba(160, 160, 160, 0.25)'
-      }
+        'headerDownShadow': '0px 5px 10px rgba(160, 160, 160, 0.25)',
+      },
     },
   },
   plugins: [],

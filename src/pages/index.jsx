@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Yuri Rebrov | Homepage</title>
-        <meta name="description" content="Yuri's homepage" />
+        <meta name="description" content="Yuri's website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
