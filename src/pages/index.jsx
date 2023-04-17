@@ -1,7 +1,6 @@
-import Header from '@/components/Header'
 import Head from 'next/head'
-import Image from 'next/image'
 import RootLayout from '@/components/Layouts/RootLayout'
+import Heading from '@/components/Heading'
 import Bio from '@/components/Bio'
 
 export default function Home() {
@@ -14,11 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <RootLayout>
-        <Bio/>
+        <Heading />
+        <Bio />
       </RootLayout>
-      {/* <section>
-        <Header/>
-      </section> */}
     </>
   )
 }

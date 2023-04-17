@@ -1,15 +1,12 @@
 import React from 'react'
-import Photo from './Photo'
 
 const Bio = () => {
   return (
-    <div className='flex flex-col items-center md:flex-row-reverse md:gap-x-[50px]'>
-      <Photo />
-      <div className='mt-[20px]'>
-        <p className='text-secondary text-[32px] md:text-[40px] leading-[30px] font-bold text-center md:text-left'>Hi, I&apos;m <span className='text-accent'>Yuri Rebrov</span></p>
-        <p className='text-[14px] md:text-[18px] font-light italic text-center md:text-left my-[10px]'>self-taught, striving for new heights</p>
-        <p className='text-[16px] max-w-[480px] text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      </div>
+    <div className='flex flex-col md:flex-row md:justify-around text-secondary'>
+      <h2 className='text-[28px] mb-[20px] md:mb-0 font-bold'>About me</h2>
+      <p className='max-w-[480px] text-justify border-l-[1px] border-label pl-[15px]'>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam hic aliquam reiciendis eligendi ea quisquam autem corporis, voluptate at obcaecati numquam commodi maiores accusamus veritatis, placeat ullam sequi sed. In maxime voluptate pariatur qui aut saepe modi ab, rem nobis quidem. Dolorum ea iusto ducimus, consequatur corrupti in fugit accusantium molestias, ab, suscipit modi magnam minima facilis placeat consequuntur velit. Minima voluptatum excepturi dignissimos repellat, ullam quibusdam esse mollitia quia fuga ipsam magni reprehenderit tempore dolore aliquid optio fugiat iusto natus vel similique commodi laborum tempora velit eum id? Dignissimos, itaque suscipit ducimus sed placeat qui aliquam magnam sunt!
+      </p>
     </div>
   )
 }

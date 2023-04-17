@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className='py-[15px] realtive'>
       <div className='mx-auto flex items-center justify-between'>
-        <Logo/>
+        <Logo />
         <div className='flex'>
           <ul className='gap-x-[30px] hidden md:flex md:items-center'>
             {
@@ -39,7 +39,7 @@ const Header = () => {
                 <RiMenuLine size={20} />
               </div>
             </motion.div>
-            <MobileMenu open={open} />
+            <MobileMenu open={open} handleClick={handleClick} />
           </div>
         </div>
       </div>
