@@ -26,7 +26,7 @@ const MobileMenu = ({ open }) => {
       <div className='flex md:hidden py-[20px] px-[30px] bg-primary shadow-lg border-[1px] border-label rounded-[10px]'>
         <ul className='flex flex-col text-center'>
           {navLinks.map(item => (
-            <li className='my-[10px] inline-block' key={item.title}>
+            <li className='my-[10px] px-[15px] inline-block' key={item.title}>
               <Link href={`${item.id}`}>{item.title}</Link>
               <div className='w-[40px] h-[1px] bg-secondary mt-[5px] mx-auto' />
             </li>

@@ -19,8 +19,8 @@ const Header = () => {
   }
 
   return (
-    <header className='py-[15px] px-[20px] realtive'>
-      <div className='max-w-[1110px] mx-auto flex items-center justify-between'>
+    <header className='py-[15px] realtive'>
+      <div className='mx-auto flex items-center justify-between'>
         <Logo/>
         <div className='flex'>
           <ul className='gap-x-[30px] hidden md:flex md:items-center'>
@@ -34,7 +34,7 @@ const Header = () => {
               ))
             }
           </ul>
-          <div className='flex items-center gap-x-[15px] realtive'>
+          <div className='flex items-center ml-[30px] gap-x-[15px] realtive'>
             <ThemeToggle handleClick={handleClick} />
             <motion.div whileTap={{ scale: 0.8 }}>
               <div className='p-[10px] rounded-[10px] border-[1px] border-label cursor-pointer block md:hidden' onClick={handleClick}>
