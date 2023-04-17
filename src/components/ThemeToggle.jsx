@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { RiMoonClearFill, RiSunFill } from 'react-icons/ri'
 
-const ThemeToggle = () => {
+const ThemeToggle = ({}) => {
   const [theme, setTheme] = useState(true)
   return (
     <>
