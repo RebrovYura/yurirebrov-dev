@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { navLinks } from './constants'
-import ThemeToggle from './ThemeToggle'
-import { RiMenuLine } from 'react-icons/ri'
-import MobileMenu from './MobileMenu'
 import { motion } from 'framer-motion'
+import { navLinks } from './constants'
+import { RiMenuLine } from 'react-icons/ri'
+import ThemeToggle from './ThemeToggle'
+import MobileMenu from './MobileMenu'
 import Logo from './Logo'
-
-
 
 const Header = () => {
   const router = useRouter()
