@@ -14,7 +14,9 @@ export default function Home() {
       </Head>
       <RootLayout>
         <Heading />
-        <Bio />
+        <div className='flex flex-col items-center md:items-stretch'>
+          <Bio />
+        </div>
       </RootLayout>
     </>
   )

@@ -17,8 +17,8 @@ const Header = () => {
   }
 
   return (
-    <header className='py-[15px] realtive'>
-      <div className='mx-auto flex items-center justify-between'>
+    <header className='py-[15px] sticky top-0 bg-primary opacity-90 z-[2] w-full'>
+      <div className='flex items-center justify-between'>
         <Logo />
         <div className='flex'>
           <ul className='gap-x-[30px] hidden md:flex md:items-center'>
@@ -32,10 +32,10 @@ const Header = () => {
               ))
             }
           </ul>
-          <div className='flex items-center ml-[30px] gap-x-[15px] realtive'>
+          <div className='flex items-center ml-[30px] gap-x-[15px] md:gap-x-0 realtive'>
             <ThemeToggle handleClick={handleClick} />
             <motion.div whileTap={{ scale: 0.8 }}>
-              <div className='p-[10px] rounded-[10px] border-[1px] border-label cursor-pointer block md:hidden' onClick={handleClick}>
+              <div className='p-[10px] rounded-[10px] border-[1px] border-label bg-primary cursor-pointer block md:hidden' onClick={handleClick}>
                 <RiMenuLine size={20} />
               </div>
             </motion.div>
