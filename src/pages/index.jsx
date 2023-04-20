@@ -62,10 +62,10 @@ export default function Home() {
             <BioName>Links 🔗</BioName>
             <BioContent>
               <div className='flex flex-col gap-y-[15px] w-fit'>
-                <Link href='https://github.com/RebrovYura' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><AiFillGithub size={20} /> GitHub</Link>
-                <Link href='https://www.artstation.com/yurirebrov' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><FaArtstation size={20} /> ArtStation</Link>
-                <Link href='https://vk.com/yrebrov1999' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><SlSocialVkontakte size={20} /> VK</Link>
-                <Link href='https://t.me/@davenli' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><FaTelegramPlane size={20} /> Telegram</Link>
+                <Link href='https://github.com/RebrovYura' target='_blank' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><AiFillGithub size={20} /> GitHub</Link>
+                <Link href='https://www.artstation.com/yurirebrov' target='_blank' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><FaArtstation size={20} /> ArtStation</Link>
+                <Link href='https://vk.com/yrebrov1999' target='_blank' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><SlSocialVkontakte size={20} /> VK</Link>
+                <Link href='https://t.me/davenli' target='_blank' className='flex items-center hover:bg-logo hover:opacity-90 transition-colors p-[8px] rounded-[5px]'><FaTelegramPlane size={20} /> Telegram</Link>
               </div>
             </BioContent>
           </div>
