@@ -70,7 +70,6 @@ export default function Home() {
             </BioContent>
           </div>
         </div>
-
       </RootLayout>
     </>
   )
