@@ -5,7 +5,7 @@ import { headingText } from './constants'
 
 const Heading = () => {
   return (
-    <div className='flex flex-col items-center my-[120px] md:my-[150px] md:flex-row-reverse md:gap-x-[50px] md:justify-between'>
+    <div className='flex flex-col items-center my-[120px] md:my-[150px] md:flex-row-reverse md:gap-x-[50px] md:justify-between w-full'>
       <Photo />
       <div className='mt-[20px]'>
         <p className='text-primary text-[32px] md:text-[40px] leading-[30px] font-bold text-center md:text-left'>Hi, I&apos;m <span className='text-accent'>Yuri Rebrov</span></p>

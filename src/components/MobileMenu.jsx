@@ -27,7 +27,7 @@ const MobileMenu = ({ open, handleClick }) => {
         <ul className='flex flex-col text-center'>
           {navLinks.map(item => (
             <li className='my-[10px] px-[15px] inline-block text-primary' key={item.title} onClick={handleClick}>
-              <Link href={`${item.id}`}>{item.title}</Link>
+              <Link href={`${item.id}`} target={`${item.id === 'https://github.com/RebrovYura/yurirebrov-dev' ? '_blank' : ''}`}>{item.title}</Link>
               <div className='w-[40px] h-[1px] bg-primary mt-[5px] mx-auto' />
             </li>
           ))}

@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className='bg-secondary font-poppins overflow-x-hidden'>
+      <body className='bg-secondary font-poppins'>
         <Main />
         <NextScript />
       </body>
