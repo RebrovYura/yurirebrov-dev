@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const Logo = () => {
   return (
     <Link href='/'>
-      <div className='text-[32px] font-bold cursor-pointer'>
-        <span className='text-logo'>Y</span>
-        <span className='text-secondary'>Rebrov</span>
-      </div>
+      <motion.div className='text-[22px] font-bold cursor-pointer'>
+        <span className='text-primary'>Yuri Rebrov</span>
+      </motion.div>
     </Link>
   )
 }
