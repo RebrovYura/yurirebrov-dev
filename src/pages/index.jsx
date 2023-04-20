@@ -40,15 +40,15 @@ export default function Home() {
             <BioContent>
               <div className='flex flex-wrap gap-[15px]'>
                 <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={html5} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={css} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={sass} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={tailwind} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={js} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={react} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={vite} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={next} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={chakra} iconAlt='html5' />
-                <TechCard link='https://en.wikipedia.org/wiki/HTML5' icon={firebase} iconAlt='html5' />
+                <TechCard link='https://en.wikipedia.org/wiki/CSS' icon={css} iconAlt='css' />
+                <TechCard link='https://sass-lang.com/' icon={sass} iconAlt='sass' />
+                <TechCard link='https://tailwindcss.com/' icon={tailwind} iconAlt='tailwind' />
+                <TechCard link='https://en.wikipedia.org/wiki/JavaScript' icon={js} iconAlt='js' />
+                <TechCard link='https://react.dev/' icon={react} iconAlt='react' />
+                <TechCard link='https://vitejs.dev/' icon={vite} iconAlt='vite' />
+                <TechCard link='https://nextjs.org/' icon={next} iconAlt='next' />
+                <TechCard link='https://chakra-ui.com/' icon={chakra} iconAlt='chakra' />
+                <TechCard link='https://firebase.google.com/' icon={firebase} iconAlt='firebase' />
               </div>
             </BioContent>
           </div>
