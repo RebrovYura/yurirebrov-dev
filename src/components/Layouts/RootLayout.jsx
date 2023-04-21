@@ -6,10 +6,10 @@ const RootLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className='max-w-[780px] mx-auto px-[20px] flex flex-col items-center'>
+      <div className='max-w-[780px] min-h-[100%] mx-auto px-[20px] flex flex-col items-center'>
         {children}
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }
