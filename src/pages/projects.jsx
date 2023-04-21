@@ -1,6 +1,9 @@
+import BioName from '@/components/BioName'
 import RootLayout from '@/components/Layouts/RootLayout'
+import ProjectItem from '@/components/ProjectItem'
 import Head from 'next/head'
-import React from 'react'
+import converter from '../../public/images/projects/converter01.png'
+import chat from '../../public/images/projects/chat01.png'
 
 const projects = () => {
   return (
@@ -9,7 +12,17 @@ const projects = () => {
         <title>Projects | Yuri Rebrov</title>
       </Head>
       <RootLayout>
-        hehehe
+        <div className='flex flex-col w-full'>
+          <BioName>Projects</BioName>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-[30px] justify-items-center'>
+            <ProjectItem link='converter' thumbnail={converter} title='Currency converter app'>
+              This application allows you to transfer from one currency to another.
+            </ProjectItem>
+            <ProjectItem link='chat' thumbnail={chat} title='Chat app'>
+              This application allows you to chat with other users.
+            </ProjectItem>
+          </div>
+        </div>
       </RootLayout>
     </>
   )

@@ -21,6 +21,7 @@ import { motion } from 'framer-motion'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaArtstation, FaTelegramPlane } from 'react-icons/fa'
 import { SlSocialVkontakte } from 'react-icons/sl'
+import Button from '@/components/Button'
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
               <br />I am currently studying programming at the university.
             </BioContent>
           </div>
+            <Button link='/projects'>See my projects</Button>
           <div className='flex flex-col'>
             <BioName>My knowledge 📚</BioName>
             <BioContent>
