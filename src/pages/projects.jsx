@@ -2,7 +2,7 @@ import BioName from '@/components/BioName'
 import RootLayout from '@/components/Layouts/RootLayout'
 import ProjectItem from '@/components/ProjectItem'
 import Head from 'next/head'
-import converter from '../../public/images/projects/converter01.png'
+import converter from '../../public/images/projects/converter01_thumb.png'
 import chat from '../../public/images/projects/chat01.png'
 
 const projects = () => {
