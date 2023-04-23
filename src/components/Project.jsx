@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 
 export const Title = ({ children }) => {
@@ -9,5 +10,17 @@ export const Title = ({ children }) => {
       <span className='inline-block'>{' '} <MdKeyboardArrowRight size={20} className='text-label' /> {' '}</span>
       <span className='text-[18px] text-accent font-semibold'>{children}</span>
     </div>
+  )
+}
+
+export const ProjectImage = ({ src, alt }) => {
+  return (
+    <Image src={src} alt={alt} className='rounded-[10px]' />
+  )
+}
+
+export const ProjectLink = ({ href, children }) => {
+  return(
+    <Link href={href} className='text-accent'>{children}</Link>
   )
 }
