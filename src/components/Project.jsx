@@ -20,7 +20,15 @@ export const ProjectImage = ({ src, alt }) => {
 }
 
 export const ProjectLink = ({ href, children }) => {
-  return(
+  return (
     <Link href={href} className='text-accent'>{children}</Link>
+  )
+}
+
+export const ProjectBadge = ({ children }) => {
+  return (
+    <div className='text-primary'>
+      {children}
+    </div>
   )
 }

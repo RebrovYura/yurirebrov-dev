@@ -8,10 +8,7 @@ import Button from '@/components/Button'
 const PageNotFound = () => {
   return (
     <>
-      <Head>
-        <title>Page not found | Yuri Rebrov</title>
-      </Head>
-      <RootLayout>
+      <RootLayout title='Page not found'>
         <div className='min-h-[100vh] flex flex-col justify-center items-center'>
           <p className='text-[20px] md:text-[32px] font-bold mb-[30px] text-center wrap text-primary'>Oh, man... I kind of lost this page 😕</p>
           <Button link='/'>Go back home</Button>

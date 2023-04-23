@@ -11,10 +11,7 @@ import { Title, ProjectImage, ProjectLink } from '@/components/Project'
 const converter = () => {
   return (
     <>
-      <Head>
-        <title>Currency Converter | Yuri Rebrov</title>
-      </Head>
-      <RootLayout>
+      <RootLayout title='Currency Converter'>
         <div className='mt-[50px]'>
           <Title>Currency Converter</Title>
           <BioName>Welcome to the Currency Converter App!</BioName>

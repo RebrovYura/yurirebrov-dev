@@ -8,10 +8,7 @@ import chat from '../../public/images/projects/chat01.png'
 const projects = () => {
   return (
     <>
-      <Head>
-        <title>Projects | Yuri Rebrov</title>
-      </Head>
-      <RootLayout>
+      <RootLayout title='Projects'>
         <div className='flex flex-col w-full'>
           <BioName>Projects</BioName>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-[30px] justify-items-center'>

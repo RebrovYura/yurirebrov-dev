@@ -27,12 +27,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Homepage | Yuri Rebrov</title>
         <meta name="description" content="Yuri's website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <RootLayout>
+      <RootLayout title='Homepage'>
         <Heading />
         <div className='flex flex-col gap-y-[50px]'>
           <div className='flex flex-col'>
