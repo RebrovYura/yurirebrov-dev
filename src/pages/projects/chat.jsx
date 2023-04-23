@@ -3,7 +3,7 @@ import React from 'react'
 
 const chat = () => {
   return (
-    <RootLayout>
+    <RootLayout title='Chat App'>
         
     </RootLayout>
   )

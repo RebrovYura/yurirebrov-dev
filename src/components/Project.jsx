@@ -15,7 +15,7 @@ export const Title = ({ children }) => {
 
 export const ProjectImage = ({ src, alt }) => {
   return (
-    <Image src={src} alt={alt} className='rounded-[10px]' />
+    <Image src={src} alt={alt} width='full' className='rounded-[10px]' />
   )
 }
 

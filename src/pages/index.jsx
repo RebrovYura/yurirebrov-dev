@@ -17,7 +17,6 @@ import {
 import BioName from '@/components/BioName'
 import BioContent from '@/components/BioContent'
 import TechCard from '@/components/TechCard'
-import { motion } from 'framer-motion'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaArtstation, FaTelegramPlane } from 'react-icons/fa'
 import { SlSocialVkontakte } from 'react-icons/sl'
@@ -26,11 +25,6 @@ import Button from '@/components/Button'
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta name="description" content="Yuri's website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <RootLayout title='Homepage'>
         <Heading />
         <div className='flex flex-col gap-y-[50px]'>
@@ -41,7 +35,7 @@ export default function Home() {
               <br />I am currently studying programming at the university.
             </BioContent>
           </div>
-            <Button link='/projects'>See my projects</Button>
+          <Button link='/projects'>See my projects</Button>
           <div className='flex flex-col'>
             <BioName>My knowledge 📚</BioName>
             <BioContent>
