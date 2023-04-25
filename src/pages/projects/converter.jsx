@@ -21,7 +21,7 @@ const converter = () => {
           </div>
           <BioName>This project has the following features:</BioName>
           <div className='ml-[30px] mb-[30px]'>
-            <ul className='text-primary list-disc flex flex-col gap-y-[10px] '>
+            <ul className='list-disc flex flex-col gap-y-[10px] '>
               <li>You can convert from one currency to another;</li>
               <li>You can see exchanges rate for select currency;</li>
               <li>Supports light/dark themes.</li>
@@ -29,7 +29,7 @@ const converter = () => {
           </div>
           <BioName>Stack</BioName>
           <div className='ml-[30px] mb-[30px]'>
-            <ul className='text-primary list-disc flex flex-col gap-y-[10px]'>
+            <ul className='list-disc flex flex-col gap-y-[10px]'>
               <li><ProjectLink href="https://vitejs.dev/">Vite+React</ProjectLink> - Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.</li>
               <li><ProjectLink href="https://tailwindcss.com/">Tailwindcss</ProjectLink> - Tailwind CSS is an open source CSS framework.</li>
               <li><ProjectLink href="https://chakra-ui.com/">Chakra UI</ProjectLink> - Chakra UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.</li>

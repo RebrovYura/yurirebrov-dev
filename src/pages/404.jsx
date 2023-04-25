@@ -9,8 +9,8 @@ const PageNotFound = () => {
   return (
     <>
       <RootLayout title='Page not found'>
-        <div className='min-h-[100vh] flex flex-col justify-center items-center'>
-          <p className='text-[20px] md:text-[32px] font-bold mb-[30px] text-center wrap text-primary'>Oh, man... I kind of lost this page 😕</p>
+        <div className='flex flex-col justify-center items-center h-[80vh]'>
+          <p className='text-[20px] md:text-[32px] font-bold mb-[30px] text-center wrap dark:text-primary text-secondary'>Oh, man... I kind of lost this page 😕</p>
           <Button link='/'>Go back home</Button>
         </div>
       </RootLayout>

@@ -8,7 +8,7 @@ const Logo = () => {
     <Link href='/'>
       <div className='text-[22px] font-bold cursor-pointer flex items-center gap-x-[5px]'>
         <Image priority src={logo} width={25} alt='logo'/>
-        <span className='text-primary'>Yuri Rebrov</span>
+        <span>Yuri Rebrov</span>
       </div>
     </Link>
   )
