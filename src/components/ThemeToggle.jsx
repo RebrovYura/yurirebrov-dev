@@ -1,22 +1,18 @@
-import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { RiMoonClearFill, RiSunFill } from 'react-icons/ri'
+import useColorMode from './hooks/useColorMode'
 
-const ThemeToggle = ({}) => {
-  const [theme, setTheme] = useState(true)
+const ThemeToggle = ({ }) => {
+  const [colorMode, setColorMode] = useColorMode()
   return (
     <>
-      <AnimatePresence mode='wait' initial={false}>
-        <motion.div
-          whileTap={{scale: 0.7}}
-          onClick={() => setTheme(!theme)}
-        >
-          <button className={`${theme ? 'bg-primary text-accent' : 'bg-secondary text-primary'} p-[10px] rounded-[10px]`}>
-            {theme ? <RiSunFill size={20} className='text-initial'/> : <RiMoonClearFill size={20} className='text-initial' />}
-          </button>
-        </motion.div>
-      </AnimatePresence>
-
+      <motion.button
+        whileTap={{ scale: 0.7 }}
+        className={`bg-secondary dark:bg-primary text-primary dark:text-accent p-[10px] rounded-[10px]`}
+        onClick={() => setColorMode(colorMode === 'dark' ? 'light' : 'dark')}
+      >
+        {colorMode == 'dark' ? <RiSunFill size={20} className='text-initial' /> : <RiMoonClearFill size={20} className='text-initial' />}
+      </motion.button>
     </>
   )
 }

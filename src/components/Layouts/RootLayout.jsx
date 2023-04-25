@@ -19,18 +19,20 @@ const RootLayout = ({ title = 'Homepage', children }) => {
         <link rel="icon" href="/favicon.ico" />
         <title>{title} | Yuri Rebrov</title>
       </Head>
-      <Header />
-      <motion.div
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={variants}
-        transition={{ duration: 0.4, type: 'easeInOut' }}
-        className='max-w-[780px] min-h-[100%] mx-auto px-[20px] flex flex-col items-center'
-      >
-        {children}
+      <motion.div transition={{duration : 0.2}} className='dark:bg-secondary bg-primary font-poppins scrollbar scrollbar-thin scrollbar-track-[#4A4253] scrollbar-thumb-rounded-[5px] scrollbar-track-rounded-[5px] scrollbar-thumb-label'>
+        <Header />
+        <motion.div
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          variants={variants}
+          transition={{ duration: 0.4, type: 'easeInOut' }}
+          className='max-w-[780px] min-h-[100%] mx-auto px-[20px] flex flex-col items-center'
+        >
+          {children}
+        </motion.div>
+        <Footer />
       </motion.div>
-      <Footer />
     </>
   )
 }

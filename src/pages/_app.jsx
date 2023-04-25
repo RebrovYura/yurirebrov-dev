@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'next-themes'
 import { AnimatePresence } from 'framer-motion'
 import '../styles/global.css'
 
@@ -16,7 +17,9 @@ export default function App({ Component, pageProps, router }) {
         }
       }}
     >
-      <Component {...pageProps} key={router.route} />
+      {/* <ThemeProvider attribute='class'> */}
+        <Component {...pageProps} key={router.route} />
+      {/* </ThemeProvider> */}
     </AnimatePresence>
   )
 }
