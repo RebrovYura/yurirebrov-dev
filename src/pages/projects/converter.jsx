@@ -1,25 +1,21 @@
 import RootLayout from '@/components/Layouts/RootLayout'
-import Image from 'next/image'
-import React from 'react'
+import Title from '@/components/Title'
+import { ProjectTitle, ProjectImage, ProjectLink } from '@/components/Project'
 import mainPage from '../../../public/images/projects/converter01.png'
 import converterPage from '../../../public/images/projects/converter02.png'
-import BioName from '@/components/BioName'
-import Head from 'next/head'
-import Link from 'next/link'
-import { Title, ProjectImage, ProjectLink } from '@/components/Project'
 
 const converter = () => {
   return (
     <>
       <RootLayout title='Currency Converter'>
         <div className='mt-[50px]'>
-          <Title>Currency Converter</Title>
-          <BioName>Welcome to the Currency Converter App!</BioName>
+          <ProjectTitle>Currency Converter</ProjectTitle>
+          <Title>Welcome to the Currency Converter App!</Title>
           <div className='flex flex-col gap-y-[40px] mb-[30px]'>
             <ProjectImage src={mainPage} alt='Main page' />
             <ProjectImage src={converterPage} alt='Converter page' />
           </div>
-          <BioName>This project has the following features:</BioName>
+          <Title>This project has the following features:</Title>
           <div className='ml-[30px] mb-[30px]'>
             <ul className='list-disc flex flex-col gap-y-[10px] '>
               <li>You can convert from one currency to another;</li>
@@ -27,7 +23,7 @@ const converter = () => {
               <li>Supports light/dark themes.</li>
             </ul>
           </div>
-          <BioName>Stack</BioName>
+          <Title>Stack</Title>
           <div className='ml-[30px] mb-[30px]'>
             <ul className='list-disc flex flex-col gap-y-[10px]'>
               <li><ProjectLink href="https://vitejs.dev/">Vite+React</ProjectLink> - Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.</li>

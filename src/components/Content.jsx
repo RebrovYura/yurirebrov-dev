@@ -1,6 +1,4 @@
-import React from 'react'
-
-const BioContent = ({children}) => {
+const Content = ({children}) => {
   return (
     <div className='max-w-[480px] text-justify hyphens-auto indent-[20px] pl-[15px] border-l-[1px] dark:border-primary border-secondary'>
       {children}
@@ -8,4 +6,4 @@ const BioContent = ({children}) => {
   )
 }
 
-export default BioContent
+export default Content

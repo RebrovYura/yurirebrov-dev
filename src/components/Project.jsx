@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 
-export const Title = ({ children }) => {
+export const ProjectTitle = ({ children }) => {
   return (
     <div className='font-normal text-[18px] my-[20px] flex items-center'>
       <Link href='/projects' className='text-label hover:underline'>Projects</Link>

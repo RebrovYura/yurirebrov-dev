@@ -1,9 +1,7 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import Photo from './Photo'
-import { headingText } from './constants'
 
-const Heading = () => {
+const Welcome = () => {
   return (
     <div className='flex flex-col items-center my-[120px] md:my-[150px] md:flex-row-reverse md:gap-x-[50px] md:justify-between w-full'>
       <Photo />
@@ -18,4 +16,4 @@ const Heading = () => {
   )
 }
 
-export default Heading
+export default Welcome
