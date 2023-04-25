@@ -36,7 +36,7 @@ const Header = () => {
             <ThemeToggle handleClick={handleClick} />
             <motion.div whileTap={{ scale: 0.8 }}>
               <div className='p-[10px] rounded-[10px] border-[1px] border-label bg-secondary cursor-pointer block md:hidden' onClick={handleClick}>
-                <RiMenuLine size={20} className='text-primary'/>
+                <RiMenuLine size={20} className='text-primary' />
               </div>
             </motion.div>
             <MobileMenu open={open} handleClick={handleClick} />

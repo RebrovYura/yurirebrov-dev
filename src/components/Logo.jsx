@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import Image from 'next/image'
+import logo from '../../public/logo.png'
 
 const Logo = () => {
   return (
     <Link href='/'>
-      <motion.div className='text-[22px] font-bold cursor-pointer'>
+      <div className='text-[22px] font-bold cursor-pointer flex items-center gap-x-[5px]'>
+        <Image src={logo} width={25} alt='logo'/>
         <span className='text-primary'>Yuri Rebrov</span>
-      </motion.div>
+      </div>
     </Link>
   )
 }

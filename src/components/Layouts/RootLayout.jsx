@@ -10,7 +10,7 @@ const variants = {
   exit: { opacity: 0, x: -30, y: 0 }
 }
 
-const RootLayout = ({ title, children }) => {
+const RootLayout = ({ title = 'Homepage', children }) => {
   return (
     <>
       <Head>

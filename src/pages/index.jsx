@@ -25,7 +25,7 @@ import Button from '@/components/Button'
 export default function Home() {
   return (
     <>
-      <RootLayout title='Homepage'>
+      <RootLayout>
         <Heading />
         <div className='flex flex-col gap-y-[50px]'>
           <div className='flex flex-col'>

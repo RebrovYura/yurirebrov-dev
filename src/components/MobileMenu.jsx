@@ -21,7 +21,7 @@ const MobileMenu = ({ open, handleClick }) => {
             exit='exit'
             variants={variants}
             transition={{ duration: 0.2, type: 'easeInOut' }}
-            className='absolute right-[20px] top-[80px]'
+            className='absolute z-[2] right-[20px] top-[80px]'
           >
             <div className='flex md:hidden py-[20px] px-[30px] bg-secondary shadow-lg border-[1px] border-primary rounded-[10px]'>
               <ul className='flex flex-col text-center'>
