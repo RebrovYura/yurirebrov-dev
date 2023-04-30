@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BioName = ({ children }) => {
+const Title = ({ children }) => {
     return (
         <div className='mb-[20px]'>
             <h2 className='text-[28px] font-bold'>{children}</h2>
@@ -8,4 +8,4 @@ const BioName = ({ children }) => {
     )
 }
 
-export default BioName
+export default Title

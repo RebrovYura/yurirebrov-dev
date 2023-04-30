@@ -21,7 +21,17 @@ export const ProjectImage = ({ src, alt }) => {
 
 export const ProjectLink = ({ href, children }) => {
   return (
-    <Link href={href} className='text-accent'>{children}</Link>
+    <Link href={href} target='_blank' className='text-accent hover:underline'>{children}</Link>
+  )
+}
+
+export const ProjectBlock = ({ children }) => {
+  return (
+    <div className='ml-[30px] mb-[30px]'>
+      <ul className='list-disc flex flex-col gap-y-[10px]'>
+        {children}
+      </ul>
+    </div>
   )
 }
 
@@ -32,3 +42,4 @@ export const ProjectBadge = ({ children }) => {
     </div>
   )
 }
+

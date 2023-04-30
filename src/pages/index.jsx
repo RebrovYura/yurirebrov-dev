@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import RootLayout from '@/components/Layouts/RootLayout'
 import Welcome from '@/components/Welcome'
+import Button from '@/components/Button'
 import {
   html5,
   css,
@@ -19,7 +20,6 @@ import TechCard from '@/components/TechCard'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaArtstation, FaTelegramPlane } from 'react-icons/fa'
 import { SlSocialVkontakte } from 'react-icons/sl'
-import Button from '@/components/Button'
 
 export default function Home() {
   return (
