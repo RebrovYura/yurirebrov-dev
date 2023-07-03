@@ -11,13 +11,14 @@ const variants = {
 }
 
 const RootLayout = ({ title, children }) => {
+  const titleText = `${title} | Yuri Rebrov`
   return (
     <>
       <Head>
         <meta name="description" content="Yuri's website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <title>{title} | Yuri Rebrov</title>
+        <title>{titleText}</title>
       </Head>
       <div className='min-h-full flex flex-col font-poppins dark:bg-secondary bg-primary dark:text-primary text-secondary'>
         <Header />
