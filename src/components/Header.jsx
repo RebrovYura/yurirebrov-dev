@@ -21,14 +21,14 @@ const Header = () => {
       <div className='max-w-[960px] mx-auto flex items-center justify-between'>
         <Logo />
         <div className='flex'>
-          <ul className='gap-x-[30px] hidden md:flex md:items-center text-secondary dark:text-primary'>
+          <ul className='gap-x-[30px] hidden md:flex md:items-center'>
             {
               navLinks.map(item => (
-                <motion.li whileHover={{ color: '#EC9A29' }} className={`font-semibold  ${router.pathname === item.id ? 'underline underline-offset-4' : 'text-inherit'} `} key={item.id}>
-                  <Link href={`${item.id}`} target={`${item.id === 'https://github.com/RebrovYura/yurirebrov-dev' ? '_blank' : ''}`}>
+                <li className={`font-semibold ${router.pathname === item.id ? 'underline underline-offset-4' : 'text-inherit'} `} key={item.id}>
+                  <Link className='text-secondary dark:text-primary' href={`${item.id}`} target={`${item.id === 'https://github.com/RebrovYura/yurirebrov-dev' ? '_blank' : ''}`}>
                     {item.title}
                   </Link>
-                </motion.li>
+                </li>
               ))
             }
           </ul>
