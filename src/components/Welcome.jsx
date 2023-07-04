@@ -8,9 +8,15 @@ const Welcome = () => {
       <div className='mt-[20px]'>
         <p className='text-[32px] md:text-[40px] leading-[30px] font-bold text-center md:text-left'>Hi, I&apos;m <span className='text-accent'>Yuri Rebrov</span></p>
         <p className='text-[14px] md:text-[16px] font-light italic text-center md:text-left my-[13px]'>self-taught, striving for new heights</p>
-        <motion.div whileTap={{scale: 0.9}}>
-          <p className='text-[16px] font-semibold max-w-[480px] text-left border-[2px] dark:border-primary border-label rounded-[10px] p-[10px] cursor-pointer select-none'>Digital creator from Belarus.<br/>Interested, motivated, disciplined.</p>
-        </motion.div>
+        <motion.a
+          href="../../docs/Resume.pdf"
+          download='Resume.pdf'
+          whileTap={{ scale: 0.9 }}
+          className='text-[16px] block font-semibold max-w-[480px] text-left border-[2px] dark:border-primary border-label rounded-[10px] p-[10px] cursor-pointer select-none'
+        >
+          Digital creator from Belarus.<br />Interested, motivated, disciplined.
+          <span className='text-accent inline-block underline'>Click for download my resume!</span>
+        </motion.a>
       </div>
     </div>
   )
