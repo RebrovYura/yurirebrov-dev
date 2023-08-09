@@ -22,7 +22,7 @@ const RootLayout = ({ title, children }) => {
       </Head>
       <div className='min-h-full flex flex-col font-poppins dark:bg-secondary bg-primary dark:text-primary text-secondary'>
         <Header />
-        <div className=''>
+        <div className='min-h-[100vh]'>
           <motion.main
             initial="hidden"
             animate="enter"
